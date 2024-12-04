@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dél-Korea bemutatása, tanuló weboldal">
+    <meta name="author" content="Gáll Eszter Eliza">
+    <meta name="copyright" content="Tanulási célra">
+    <link rel="icon" href="icon.jpg" type="image/x-icon">
+    <link href="style.css" rel="stylesheet">
+    <title>Dél-Korea</title>
+    <script src="jquery-3.7.1.js"></script>
+    <script src="effekt.js"></script>
+</head>
+<body>
+    <header><h1>Dél-Korea</h1></header>
+    <div class="tartalom">
+        <nav class="menu">
+            <a href="index.html">Kezdőlap</a>
+            <a href="hagyomanyok.html">Hagyományos művészetek</a>
+            <a href="nepih.html">Népi hitvilág</a>
+            <a href="etelek.html">Ételek</a>
+            <a href="popkult.html" class="active">Popkultúra</a>
+        </nav>
+        <article class="article_egesz">
+            <h2 class="cikkcim">Popkultúra</h2>
+            <p>A K-pop (케이팝, 가요, kajo) vagy koreai popzene többek között elektronikus, hiphop, pop, rock és R&B alapokon nyugszik és különálló zenei műfajként tartják számon. A koreai popzene alapjai az 1920-as évek trot műfajára vezethetőek vissza, ezeket a dalokat a japán enkadalok befolyásolták. A második világháborút követően elkezdett megnőni az amerikai kultúra befolyása Koreában, ami a populáris zenére is kihatott. Az 1970-es évek hippi-kultúráját, valamint az 1980-as évekbeli balladák korszakát 1992-ben éles fordulópont követte, ekkor jelent meg a Seo Taiji & Boys nevű együttes, akik új alapokra helyezték a koreai popzenét, megalkotva a mainstream popdalok sikerformátumát.</p>
+        </article>
+        <aside class="aside_egesz">
+            <h2 class="cikkcim">💡Tudtad?</h2>
+            <p>A K-popot többször érte kritika a túlzottan amerikai hangzásvilága miatt, egyes kritikusok egyenesen úgy vélik, a koreai popipar gyakorlatilag nem tesz mást, mint a nyugati mintákat másolja, több koreai előadó is keveredett már plágiumbotrányba. A koreai popot gyakorta nevezik bubblegum popnak is. </p>
+        </aside>
+        
+        <article class="hosszu">
+            <p>A saját szokásrendszerével, különleges módon strukturált rajongótáborával és egyedi gyakornoki rendszerével külön szubkultúrát alkotó K-popot az úgynevezett idolegyüttesek (azaz fiú- és lányegyüttesek) dominálják, mint a BTS, a Super Junior, a SHINee, a Stray Kids, az EXO, a Mamamoo, a Blackpink, a Red Velvet, a Twice, de számos sikeres szólóelőadó is létezik, mint például PSY, Rain, BoA, IU, Jessi, Hyuna vagy Taemin. A K-pop-ipart a kiadóként is funkcionáló ügynökségek irányítják, melyek közül piaci részesedés tekintetében a legnagyobbak az S.M. Entertainment, a YG Entertainment, a JYP Entertainment és a Hybe Corporation. A K-pop hatással van az ázsiai divatra, több előadó is divatikonnak számít.</p>
+            <p> A K-pop Ázsiában a legnépszerűbb, különösen Japánban, de a koreai hullám keretén belül, főképp az internetes megosztási lehetőségeknek és a cégek marketing-stratégiáinak köszönhetően a K-pop-előadók a világ többi részén is népes rajongótáborral bírnak. 2022-ben Japán mellett Kína és az Egyesült Államok volt a K-pop legnagyobb felvevőpiaca; ebben az évben minden korábbi exportrekordot megdöntött a műfaj. Európai és amerikai dalszerzők illetve producerek (például Quincy Jones, will.i.am, Ludacris és Swizz Beatz) is felfigyeltek a koreai popzenére és írnak dalokat K-pop-előadóknak.
+
+            A K-pop leggyakoribb kritikája, hogy az előadókat „futószalagon gyártják”, a dalok többsége egynyári sláger, a dalszövegek felszínesek és az egész iparág túlzottan profitorientált, ami többször együtt jár azzal is, hogy az előadókkal méltánytalan szerződéseket kötnek a kiadók.</p>
+        </article>  
+        <div id="photo-viewer">
+            <button id="prev-btn">◀</button>
+            <img id="current-image" src="bts.jpg" alt="Kép" />
+            <button id="next-btn">▶</button>
+        </div>      
+        <form action="" method="post" id="myform" novalidate>
+            <h2 class="cikkcim">BTS Tudás Teszt 💜</h2>
+            <p>Mennyire ismered a világ egyik legsikeresebb K-pop csapatát? Tedd próbára magad ezzel a kvízzel!</p>
+            
+            <!-- 1. kérdés -->
+            <p>1. Mit jelent a BTS rövidítés?</p>
+            <label>
+                <input name="f1" type="radio" value="a1">
+                Beyond The Stars
+            </label><br>
+            <label>
+                <input name="f1" type="radio" value="jo1">
+                Bangtan Sonyeondan
+            </label><br>
+            <label>
+                <input name="f1" type="radio" value="c1">
+                Best Team of Seoul
+            </label><br>
+            <label>
+                <input name="f1" type="radio" value="d1">
+                Brave Talent Squad
+            </label><br>
+            
+            <!-- 2. kérdés -->
+            <p>2. Mi volt a BTS első Grammy-díj jelölése?</p>
+            <label for="lista">Válaszd ki a listából:</label><br>
+            <select id="lista" name="f2">
+                <option value="a2">Best New Artist</option>
+                <option value="b2">Album of the Year</option>
+                <option value="c2">Best Rap Song</option>
+                <option value="jo2">Best Pop Duo/Group Performance</option>
+            </select>
+        
+            <!-- 3. kérdés -->
+            <p>3. Mikor debütált a BTS?</p>
+            <label>
+                <input name="f3" type="radio" value="a">
+                2012. június 13.
+            </label><br>
+            <label>
+                <input name="f3" type="radio" value="jo3">
+                2013. június 13.
+            </label><br>
+            <label>
+                <input name="f3" type="radio" value="c">
+                2014. július 13.
+            </label><br>
+            <label>
+                <input name="f3" type="radio" value="d">
+                2015. május 13.
+            </label><br>
+        
+            <!-- 4. kérdés -->
+            <p>4. Mi a BTS hivatalos fanclub neve?</p>
+            <label for="fanclub">Válaszd ki a listából:</label><br>
+            <select id="fanclub" name="f4">
+                <option value="jo4">ARMY</option>
+                <option value="b4">Blink</option>
+                <option value="c4">Once</option>
+                <option value="d4">EXO-L</option>
+            </select>
+        
+            <!-- 5. kérdés -->
+            <p>5. Melyik két BTS dal nem szerepel az albumok címadó dalai között?</p>
+            <label>
+                <input type="checkbox" name="f5[]" value="Dope">
+                Dope
+            </label><br>
+            <label>
+                <input type="checkbox" name="f5[]" value="Fire">
+                Fire
+            </label><br>
+            <label>
+                <input type="checkbox" name="f5[]" value="Not Today">
+                Not Today
+            </label><br>
+            <label>
+                <input type="checkbox" name="f5[]" value="IDOL">
+                IDOL
+            </label><br>
+        
+            <!-- 6. kérdés -->
+            <p>6. Mi a BTS vezetőjének, RM-nek valódi neve?</p>
+            <label for="vezeto">Írd be a nevet:</label><br>
+            <input id="vezeto" name="f6" type="text" placeholder="RM valódi neve" size="30">
+        
+            <!-- Gombok -->
+            <p>
+                <input type="submit" value="Mehet" id="mehet">
+                <input type="reset" value="Törlés" id="torles">
+            </p>
+            <h2 id="megoldas"></h2>
+        </form>
+        <script src="jquery-3.7.1.js"></script>
+        <script src="effekt.js"></script>
+    </div>
+    <footer>Az oldal tanulmányi célú. <br>Gáll Eszter Eliza © 2024</footer>
+</body>
+</html>

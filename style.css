@@ -1,0 +1,319 @@
+*{box-sizing:border-box;}
+body{margin:1%; padding:0;background-color:rgb(243, 228, 184);
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.4);}
+
+header{
+    padding:1em;
+    margin:0;
+    background-color:rgb(114, 67, 14);
+    text-align:center;
+    font-size:1.5em;
+    color:white;
+    text-shadow: 0.3em 0.3em 0.3em rgba(0, 0, 0, 0.4);
+    box-shadow: 0.3em 0.3em 0.3em rgba(0, 0, 0, 0.800);
+    border-radius:1em;
+}
+
+h1{
+    display:block;
+    margin:0.3em 0;
+    font-weight: bold;
+}
+h2{
+    display:block;
+}
+
+p{display:block;}
+
+.tartalom{
+    display:flex;
+    flex-flow: row wrap;
+}
+
+.tartalom>*{
+    height:fit-content;
+}
+
+nav {
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1.3em 0 1.3em 0;
+    width:100%;
+    background-color: rgb(114, 67, 14);
+    text-shadow: 0.3em 0.3em 0.3em rgba(0, 0, 0, 0.4);
+    box-shadow: 0.3em 0.3em 0.3em rgba(0, 0, 0, 0.8);
+    border-radius:1em;
+}
+
+nav a {
+    display:block;
+    text-decoration:none;
+    color:white;
+    font-size: 1.5em;
+    text-shadow: 0.3em 0.3em 0.3em rgba(0, 0, 0, 0.8);
+    padding:0.5em;
+}
+
+nav a.active{
+    font-weight:bold;
+    font-size: 2em;
+}
+
+article{
+    background-color:rgb(114, 67, 14);
+    color:white;
+    padding: 1em 1em;
+    text-align:justify;
+    border-radius:15px;
+    width:100%;
+    font-size: 1.3em;
+    text-shadow: 0.3em 0.3em 0.3em rgba(0, 0, 0, 0.4);
+    box-shadow: 0.3em 0.3em 0.3em rgba(0, 0, 0, 0.8);
+    border-radius:1em;
+    margin: 1.3em 0 1.3em 0;
+}
+
+aside{
+    display:block;
+    background-color:rgb(114, 67, 14);
+    color:white;
+    padding: 1em 1em;
+    text-align:justify;
+    border-radius:15px;
+    margin: 1.3em 0 1.3em 0;
+    width:100%;
+    font-size: 1.3em;
+    font-style:italic;
+    text-shadow: 0.3em 0.3em 0.3em rgba(0, 0, 0, 0.4);
+    box-shadow: 0.3em 0.3em 0.3em rgba(0, 0, 0, 0.8);
+    border-radius:1em;
+}
+
+article.hosszu{
+    display:block;
+    background-color:rgb(114, 67, 14);
+    color:white;
+    padding: 1em 1em;
+    text-align:justify;
+    border-radius:15px;
+    margin: 1.3em 0 1.3em 0;
+    width:100%;
+    font-size: 1.3em;
+    text-shadow: 0.3em 0.3em 0.3em rgba(0, 0, 0, 0.4);
+    box-shadow: 0.3em 0.3em 0.3em rgba(0, 0, 0, 0.8);
+    border-radius:1em;
+}
+
+img.kep{
+    width:60%;
+    height: auto;
+    float:initial;
+    margin:0.8% 20%;
+    transition: transform 0.3s ease; /* Simább animáció */
+    cursor: pointer; /* A kattinthatóság jelzése */
+}
+
+
+footer{
+    display:block;
+    background-color:rgb(114, 67, 14);
+    color:white;
+    padding: 1em 1em;
+    text-align:center;
+    border-radius:15px;
+    width:100%;
+    font-size: 1.3em;
+    text-shadow: 0.3em 0.3em 0.3em rgba(0, 0, 0, 0.4);
+    box-shadow: 0.3em 0.3em 0.3em rgba(0, 0, 0, 0.8);
+    border-radius:1em;
+    margin: 1.3em 0 1.3em 0;
+}
+
+form{
+    display:block;
+    background-color:rgb(114, 67, 14);
+    color:white;
+    padding: 1em 1em;
+    text-align:center;
+    border-radius:15px;
+    margin: 1.3em 0 1.3em 0;
+    width:100%;
+    font-size: 1.3em;
+    text-shadow: 0.3em 0.3em 0.3em rgba(0, 0, 0, 0.4);
+    box-shadow: 0.3em 0.3em 0.3em rgba(0, 0, 0, 0.8);
+    border-radius:1em;
+}
+
+.cikkcim{
+    text-align: center;
+}
+
+input#mehet {
+    cursor: pointer;
+    color: white;
+    text-shadow: 0.3em 0.3em 0.3em rgba(0, 0, 0, 0.4);
+    font-size: 1.3em;
+    background-color:rgb(197, 113, 17);;
+}
+
+input#torles{
+    cursor: pointer;
+    color: white;
+    text-shadow: 0.3em 0.3em 0.3em rgba(0, 0, 0, 0.4);
+    font-size: 1.3em;
+    background-color:rgb(197, 113, 17);;
+}
+
+.petal {
+    position: absolute;
+    background-color: pink;
+    border-radius: 50%;
+    opacity: 0.7;
+    width: 15px;
+    height: 15px;
+    animation: fall 2s linear;
+}
+@keyframes fall {
+    from {
+        transform: translateY(0) rotate(0deg);
+    }
+    to {
+        transform: translateY(300px) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+#fotok {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.thumbnail {
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.thumbnail:hover {
+    transform: scale(1.1);
+}
+
+/* Lightbox */
+#lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+#lightboxkep {
+    max-width: 90%;
+    max-height: 90%;
+    border: 5px solid white;
+}
+
+#close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.main{
+    justify-content: center;
+}
+
+#photo-viewer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#current-image {
+    max-width: 100%;
+    max-height: 80vh;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    display: block;
+}
+
+#prev-btn, #next-btn {
+    background-color: #333;
+    color: white;
+    border: none;
+    font-size: 0.5em;
+    padding: 1em;
+    cursor: pointer;
+    position:relative;
+    top: 50%;
+    transform: translateY(-50%);
+    border-radius: 5px;
+}
+
+#prev-btn {
+    left: +3em;
+}
+
+#next-btn {
+    right: +3em;
+}
+
+#prev-btn:hover, #next-btn:hover {
+    background-color: #555;
+}
+
+
+@media only screen and (min-width: 600px)
+{
+    nav{
+        flex-direction: row;
+        justify-content: center;
+    }
+    aside{
+        display:block;
+        justify-content:center;
+    }
+
+    img.kep{
+        flex-basis:80%;
+        height: auto;
+        margin: 0.8% 20%;
+    }
+    
+}
+@media only screen and (min-width: 768px)
+{
+
+    aside{
+        flex-basis: 100%;
+        margin:0.7% 30%;
+        align-items:center;
+    }
+    article{
+        margin: 0.7% 20%;
+        justify-content:center;
+    }
+    article.hosszu{
+        margin: 0.7% 15%;
+        justify-content:center;
+    }
+    form{
+        margin: 0.7% 15%;
+        justify-content:center;
+    }
+} 
