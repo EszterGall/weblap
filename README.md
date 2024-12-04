@@ -8,7 +8,7 @@ Dél-Koreáról készítettem a weboldalt. A népi hiedelemeiről, hagyományair
 Az index.html és a hagyomanyok.html oldalon a képeken lévő nagyító funkció, illetve a szirmok hullása menüre kattintáskor effekt. A szirmok hullása effekt mindegyik oldalon megtalálható.
 Használatuknak célja az hogy színesebbé tegyék az oldalt.
 Működésük részletesen le van írva a kommentekben.
-5. Egyedi fonttípus/google web font:?
+5. Egyedi fonttípus/google web font:
 Használatának helye:?
 
 6. jQuery-n kívül nem található a weboldalon olyan kód amit nem én írtam.
