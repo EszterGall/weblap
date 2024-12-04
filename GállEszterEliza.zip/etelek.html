@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dél-Korea bemutatása, tanuló weboldal">
+    <meta name="author" content="Gáll Eszter Eliza">
+    <meta name="copyright" content="Tanulási célra">
+    <link rel="icon" href="icon.jpg" type="image/x-icon">
+    <link href="style.css" rel="stylesheet">
+    <title>Dél-Korea</title>
+    <script src="jquery-3.7.1.js"></script>
+    <script src="effekt.js"></script>
+</head>
+<body>
+    <header><h1>Dél-Korea</h1></header>
+    <div class="tartalom">
+        <nav class="menu" onclick="createPetals()">
+            <a href="index.html">Kezdőlap</a>
+            <a href="hagyomanyok.html">Hagyományos művészetek</a>
+            <a href="nepih.html">Népi hitvilág</a>
+            <a href="etelek.html" class="active">Ételek</a>
+            <a href="popkult.html">Popkultúra</a>
+            </nav>
+        <article class="article_egesz">
+            <h2 class="cikkcim">A koreai ételek 🍲</h2>
+            <p>A koreai konyhaművészet változatosnak, sokszínűnek és általában véve egészségesnek mondható. Hatással volt rá a kínai és a japán konyha, de számos étele rendkívül különböző ezektől, elkészítési módját, alapanyagait és ízesítését tekintve is. Jellegzetes ételei közé sorolják a fermentált kimcshit, a húsételek közül a pulgogit és a kalbit, a pibimbapot, a japán makiszusival rokon kimbapot. Az italok közül ismert égetett szesz a szodzsu. A koreai gasztronómia három legfontosabb ételízesítője a szójaszósz (kandzsang), a kocshudzsang (csilipaprikakrém) és a töndzsang (szójababkrém).</p>
+        </article>
+        <aside class="aside_egesz">
+            <h2 class="cikkcim">💡Tudtad?</h2>
+            <p>A koreai kultúrában az étkezésnek, az ételeknek rendkívül fontos szerepe van, úgy tartják, „az evés maga a mennyország” (먹는 것이 하늘이다, mongnun kosi hanurida), és a koreaiak gyógyító erőt is tulajdonítanak az ételeknek (약식동원, jaksik tongvon, „az orvosság és az étel egy gyökérről fakad”).[</p>
+        </aside>
+        
+        <article class="hosszu">
+            <h2 class="cikkcim">Királyi konyhaművészet</h2>
+            <p>A Csoszon-udvarban az ételek kiemelkedő fontosságúak voltak, ezt támasztja alá, hogy a hat minisztériumban (육조, Jukcso) számos hivatalnok volt felelős a királyi udvar ellátásáért, az ételek elkészítéséért, beszerzéséért, a munkafolyamatok ellenőrzéséért. Ezen felül a palotában több száz asszony, úgynevezett kungnjo (궁녀, „palotahölgy”) dolgozott, akik többek között az ételek elkészítéséért és felszolgálásáért voltak felelősek, ételtípusonként. Volt külön szakács ttokféleségekhez, levesekhez, teákhoz stb. A pontos hierarchiát törvényben határozták meg.</p>
+            <img src="kiralyi.jpg" alt="Királyi udvarban készített ételek" class="kep" onclick="zoomImage(img)">
+            <h2 class="cikkcim">Templomi konyhaművészet</h2>
+            <p> A koreai templomi konyhaművészet a koreai buddhista templomokból eredő ételek összefoglaló neve. A Silla korszakban (i. e. 57 – i. sz. 935) a buddhista templomokban áldozati ételként cshalbapot (찰밥, főtt ragacsos rizs), jakkvát és jumilgvát szolgáltak fel. A Korjo korban a szangcshu sszam (növénylevélbe tekert étel) és jaksik (약식, „gyógyhatású ételek”) fejlődtek tovább.
+
+            A koreai udvar konyhaművészete szoros kapcsolatban van a koreai buddhista gasztronómiával. Az udvarban dolgozó szanggungoknak, akik az ételeket készítették, miután kiöregedtek a szolgálatból, el kellett hagyniuk a palotát. Mivel férjhez nem mehettek, többük buddhista templomokban keresett menedéket apácaként, és továbbadták az udvari ételek elkészítési technikáit, összeolvasztva azokat a buddhista konyhaművészettel.
+                
+            A koreai buddhista templomi ételek vegánok, azaz semmilyen állati eredetű összetevőt nem tartalmaznak, ezen kívül hagymaféléket sem használnak az ételek elkészítésekor.</p>
+            <img src="templomi.jpg" alt="Templomi ételek" class="kep" onclick="zoomImage(img)">
+            <h2 class="cikkcim">Utcai ételek</h2>
+            <p>Az utcai ételek (street food) nagyon változatosak Dél-Koreában, a nagyobb városokban számos úgynevezett „gasztroutca” (food street) található, ahol egymást érik a különféle specialitásokat kínáló ételstandok, koreai nevükön phodzsangmacshák. Jellemző harapnivalók a ttokpokki, a thügim, az omuk, a szunde, a cson, a kimbap, a hottok. Sütemények és édességek is széles választékban kaphatóak, például a gofritésztához hasonlóan készülő, különféle töltelékű sütemények.</p>
+        
+            <main>
+                <!-- Galéria tartalmazó -->
+                <div id="fotok">
+                    <img src="th_corndog.jpg" data-full="corndog.jpg" alt="Corndog" class="thumbnail" onclick="zoomImage(img)">
+                    <img src="th_fank.jpg" data-full="fank.jpg" alt="Fánk" class="thumbnail" onclick="zoomImage(img)">
+                    <img src="ph_fonottfank.jpg" data-full="fonottfank.jpg" alt="Fonott fánk" class="thumbnail" onclick="zoomImage(img)">
+                    <img src="th_halaspalcsi.jpg" data-full="halaspalcsi.jpg" alt="Hal alakú palacsinta" class="thumbnail" onclick="zoomImage(img)">
+                    <img src="th_hotdog.jpg" data-full="hotdog.webp" alt="Hotdog" class="thumbnail" onclick="zoomImage(img)">
+                    <img src="th_hus.jpg" data-full="hus.jpg" alt="Fűszeres hús" class="thumbnail" onclick="zoomImage(img)">
+                    <img src="th_krumpli.jpg" data-full="krumpli.jpg" alt="Krumpli olajban kisütve" class="thumbnail" onclick="zoomImage(img)">
+                    <img src="th_tal.jpg" data-full="tal.jpg" alt="Egy tál étel" class="thumbnail" onclick="zoomImage(img)">
+                    <img src="th_virsli.jpg" data-full="virsli.jpg" alt="Virsli" class="thumbnail" onclick="zoomImage(img)">
+                </div>
+        
+                <!-- Lightbox nagy kép -->
+                <div id="lightbox" style="display: none;">
+                    <span id="close">&times;</span>
+                    <img id="lightboxkep" src="" alt="">
+                </div>
+            </main>
+        </article>
+        <form>
+            <p>Mennyire szereted a koreai ételeket?</p>
+            
+            <!-- Interaktív elem: csúszka -->
+            <label for="etelSkala">Értékeld a koreai ételeket (0-tól 10-ig):</label>
+            <input type="range" id="etelSkala" name="etelSkala" min="0" max="10" value="0">
+            <br>
+            
+            <label for="etel">Melyik koreai ételt szereted a legjobban?</label>
+            <input type="text" id="etel" name="etel" list="etelek" placeholder="Válaszd ki a legjobban kedvelt ételed:">
+            <datalist id="etelek">
+                <option value="Kimbap tekercs">
+                <option value="Instant ramen">
+                <option value="Bibimbap">
+                <option value="Japchae">
+            </datalist>
+            <p>
+                <input type="submit" value="Mehet" id="mehet">
+                <input type="reset" value="Törlés" id="torles">
+            </p>
+            <h2  id="thanksMessage" ></h2>
+        </form>
+    </div>
+    <footer>Az oldal tanulmányi célú. Gáll Eszter Eliza © 2024</footer>
+</body>
+</html>
