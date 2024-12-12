@@ -1,5 +1,5 @@
 1. Oldal készítője: Gáll Eszter Eliza
-2. weblap URL címe:?
+2. weblap URL címe:https://esztergall.github.io/weblap/
 3. Weboldalam témája:
 Dél-Koreáról készítettem a weboldalt. A népi hiedelemeiről, hagyományairól, popkultúrájáról és ételeiről tartalmaz bővebb ismertetőt az oldal, illetve a kezdőlapon az ország egészéről található egy rövid ismertető egy ezzel kapcsolatos kvízzel együtt.
 4. Saját javascript kódom:
